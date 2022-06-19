@@ -35,7 +35,7 @@ app.post("/tweets", (request, response) => {
 });
 
 app.get("/tweets", (request, response) => {
-  response.send(tweets.slice(-10));
+  response.send(tweets.slice(-10).reverse());
 });
 
 app.listen(5000);
